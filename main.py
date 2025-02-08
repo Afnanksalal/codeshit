@@ -25,7 +25,7 @@ class LoRaReceiver(LoRa):
 
 # LoRa Configuration (Match these settings with your ESP32 transmitter!)
 lora = LoRaReceiver(verbose=False)
-lora.set_freq(915.0)  # Set frequency to 915MHz (adjust as needed)
+lora.set_freq(433.0)  # Set frequency to 433 MHz for RA-02
 lora.set_pa_config(pa_select=1)
 lora.set_spreading_factor(12)         # Spreading Factor (SF7-SF12)
 lora.set_bandwidth(125e3)            # Bandwidth: 125 kHz
